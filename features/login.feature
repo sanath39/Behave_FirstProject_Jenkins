@@ -10,5 +10,3 @@ Feature: Login into Orange HRMS
     Examples:
     | username | password |
     | Admin    | admin123 |
-    | admi     | admin123 |
-
