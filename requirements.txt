@@ -1,0 +1,4 @@
+behave
+allure-behave
+selenium==3.141.0
+pytest
