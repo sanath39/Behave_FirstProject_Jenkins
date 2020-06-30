@@ -1,0 +1,99 @@
+{
+  "9de1ad04528555627c626a3d023af249" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e070a7fd63cfe72f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593512077100,
+        "stop" : 1593512090830,
+        "duration" : 13730
+      }
+    } ]
+  },
+  "4d98970b415dcea356178b47511ae85d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4df02807694a9570",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593512116250,
+        "stop" : 1593512120170,
+        "duration" : 3920
+      }
+    } ]
+  },
+  "1e8c25a94cadb73386c52ef0b01d8270" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "df4d80bc5326dda3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: headless chrome=83.0.4103.116)\n\n",
+      "time" : {
+        "start" : 1593512095062,
+        "stop" : 1593512116239,
+        "duration" : 21177
+      }
+    } ]
+  },
+  "f9ffe4d1145cfbdafc97c0f7083d122e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "71209818caa8d69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593512090834,
+        "stop" : 1593512095058,
+        "duration" : 4224
+      }
+    } ]
+  },
+  "9c6ae98e57f7e73415eae2de20fd362e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d1e952b9d427be80",
+      "status" : "failed",
+      "statusDetails" : "AssertionError\n",
+      "time" : {
+        "start" : 1593512120174,
+        "stop" : 1593512124282,
+        "duration" : 4108
+      }
+    } ]
+  }
+}

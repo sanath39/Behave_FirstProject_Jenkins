@@ -1,0 +1,123 @@
+{
+  "uid" : "cf4619c3e2ca0e23",
+  "name" : "Test the Login Screen -- @1.2 ",
+  "historyId" : "9c6ae98e57f7e73415eae2de20fd362e",
+  "time" : {
+    "start" : 1593512120174,
+    "stop" : 1593512124282,
+    "duration" : 4108
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError\n",
+  "statusTrace" : "  File \"c:\\users\\sanathkumar vignesh\\pycharmprojects\\first_project\\venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"c:\\users\\sanathkumar vignesh\\pycharmprojects\\first_project\\venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\login.py\", line 38, in step_impl\n    assert context.browser.current_url == \"https://opensource-demo.orangehrmlive.com/index.php/dashboard\"\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError\n",
+    "statusTrace" : "  File \"c:\\users\\sanathkumar vignesh\\pycharmprojects\\first_project\\venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"c:\\users\\sanathkumar vignesh\\pycharmprojects\\first_project\\venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\login.py\", line 38, in step_impl\n    assert context.browser.current_url == \"https://opensource-demo.orangehrmlive.com/index.php/dashboard\"\n",
+    "steps" : [ {
+      "name" : "Given I navigate to Orange Hrms website",
+      "time" : {
+        "start" : 1593512120177,
+        "stop" : 1593512121234,
+        "duration" : 1057
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "When I input the \"admi\" and \"admin123\"",
+      "time" : {
+        "start" : 1593512121235,
+        "stop" : 1593512121958,
+        "duration" : 723
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "And I click the login button",
+      "time" : {
+        "start" : 1593512121959,
+        "stop" : 1593512124265,
+        "duration" : 2306
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Then I must navigate to the other page",
+      "time" : {
+        "start" : 1593512124266,
+        "stop" : 1593512124281,
+        "duration" : 15
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"c:\\users\\sanathkumar vignesh\\pycharmprojects\\first_project\\venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"c:\\users\\sanathkumar vignesh\\pycharmprojects\\first_project\\venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\login.py\", line 38, in step_impl\n    assert context.browser.current_url == \"https://opensource-demo.orangehrmlive.com/index.php/dashboard\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Login into Orange HRMS"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "admin123"
+  }, {
+    "name" : "username",
+    "value" : "admi"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cf4619c3e2ca0e23.json",
+  "parameterValues" : [ "admin123", "admi" ]
+}

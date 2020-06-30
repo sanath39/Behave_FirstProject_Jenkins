@@ -1,0 +1,38 @@
+<testsuite name="login.Login into Orange HRMS" tests="2" errors="0" failures="1" skipped="0" time="5.959648" timestamp="2020-06-30T15:47:36.484846" hostname="LAPTOP-S0D2E6MC"><testcase classname="login.Login into Orange HRMS" name="Test the Login Screen -- @1.1 " status="passed" time="3.381611"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Test the Login Screen -- @1.1 
+    Given I navigate to Orange Hrms website ... passed in 0.774s
+    When I input the "Admin" and "admin123" ... passed in 0.819s
+    And I click the login button ... passed in 1.768s
+    Then I must navigate to the other page ... passed in 0.021s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Login into Orange HRMS" name="Test the Login Screen -- @1.2 " status="failed" time="2.578037"><failure type="AssertionError" message="">
+<![CDATA[
+Failing step: Then I must navigate to the other page ... failed in 0.016s
+Location: features/login.feature:9
+Traceback (most recent call last):
+  File "c:\users\sanathkumar vignesh\pycharmprojects\first_project\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\sanathkumar vignesh\pycharmprojects\first_project\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\login.py", line 38, in step_impl
+    assert context.browser.current_url == "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
+AssertionError
+]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Test the Login Screen -- @1.2 
+    Given I navigate to Orange Hrms website ... passed in 0.728s
+    When I input the "admi" and "admin123" ... passed in 0.725s
+    And I click the login button ... passed in 1.109s
+    Then I must navigate to the other page ... failed in 0.016s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

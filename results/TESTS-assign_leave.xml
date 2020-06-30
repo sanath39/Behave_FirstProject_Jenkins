@@ -1,0 +1,75 @@
+<testsuite name="assign_leave.Assign leave to an employee" tests="3" errors="1" failures="0" skipped="0" time="37.4742" timestamp="2020-06-30T15:47:30.490263" hostname="LAPTOP-S0D2E6MC"><testcase classname="assign_leave.Assign leave to an employee" name="Testing the Assign Leave Screen" status="passed" time="12.357069"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Testing the Assign Leave Screen
+    Given I login to the OrangeHRMS ... passed in 7.621s
+    When I click on the "Leave" ... passed in 3.398s
+    And I click on the "Assign Leave" ... passed in 1.253s
+    Then I must navigate to the Assign Leave page ... passed in 0.085s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Login successful
+
+]]>
+</system-out></testcase><testcase classname="assign_leave.Assign leave to an employee" name="Testing the Quick Assign Leave Screen" status="passed" time="3.869494"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Testing the Quick Assign Leave Screen
+    Given I login to the OrangeHRMS ... passed in 2.841s
+    When I click on the "Quick Assign Leave" ... passed in 0.919s
+    Then I must navigate to the Assign Leave page ... passed in 0.110s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Login successful
+
+]]>
+</system-out></testcase><testcase classname="assign_leave.Assign leave to an employee" name="Testing For Assigning Leave To Employee" status="failed" time="21.247637"><error type="ElementNotInteractableException" message="Message: element not interactable&#10;  (Session info: headless chrome=83.0.4103.116)&#10;">
+<![CDATA[
+Failing step: And I Filling all the required fields to assign leave ... failed in 17.450s
+Location: features/assign_leave.feature:19
+Traceback (most recent call last):
+  File "c:\users\sanathkumar vignesh\pycharmprojects\first_project\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\sanathkumar vignesh\pycharmprojects\first_project\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\assign_leave.py", line 61, in step_impl
+    context.assignleave.click_ok_confirm()
+  File "C:\Users\SanathKumar Vignesh\PycharmProjects\First_Project\features\pages\assignleave.py", line 47, in click_ok_confirm
+    return self.driver.find_element_by_xpath(self.btn_confirm_ok_xpath).click()
+  File "c:\users\sanathkumar vignesh\pycharmprojects\first_project\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "c:\users\sanathkumar vignesh\pycharmprojects\first_project\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "c:\users\sanathkumar vignesh\pycharmprojects\first_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\sanathkumar vignesh\pycharmprojects\first_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: headless chrome=83.0.4103.116)
+
+
+Captured stdout:
+Login successful]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Testing For Assigning Leave To Employee
+    Given I login to the OrangeHRMS ... passed in 2.867s
+    When I click on the "Quick Assign Leave" ... passed in 0.930s
+    And I Filling all the required fields to assign leave ... failed in 17.450s
+    Then I must navigate to the Assign Leave page ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Login successful
+
+]]>
+</system-out></testcase></testsuite>
