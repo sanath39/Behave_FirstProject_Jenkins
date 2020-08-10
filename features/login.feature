@@ -10,3 +10,13 @@ Feature: Login into Orange HRMS
     Examples:
     | username | password |
     | Admin    | admin123 |
+    | admi     | admin123 |
+
+    @test2
+   Scenario: Login Screen Test
+     Given I navigated to Orange HRMS website
+     When I input <username> and <password>
+       | username | password |
+       | Admin | admin123 |
+     And Click the Login button
+     Then I navigate to dashboard

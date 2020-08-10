@@ -36,3 +36,27 @@ def step_impl(context):
     :type context: behave.runner.Context
     """
     assert context.browser.current_url == "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
+
+
+@given(u'I navigated to Orange HRMS website')
+def step_impl(context):
+    context.browser.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login")
+
+
+@when(u'I input <username> and <password>')
+def step_impl(context):
+    for each in context.table:
+        context.login.setUsername(each['username'])
+        context.login.setPassword(each['password'])
+    context.log.info('Username and password set')
+
+
+@when(u'Click the Login button')
+def step_impl(context):
+    context.login.click_login()
+    context.log.info('Login Button Clicked')
+
+
+@then(u'I navigate to dashboard')
+def step_impl(context):
+    context.login.setUsername('Sanath')

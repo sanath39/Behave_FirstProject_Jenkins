@@ -1,8 +1,12 @@
-from selenium import webdriver
+import logging
+import os
+
 from features.browser import Browser
-from features.pages.login import LoginPage
-from features.pages.home import HomePage
 from features.pages.assignleave import LeavePage
+from features.pages.home import HomePage
+from features.pages.login import LoginPage
+
+
 # from allure_behave.hooks import allure_report
 
 def before_all(context):
@@ -11,6 +15,7 @@ def before_all(context):
     context.login = LoginPage(context.browser)
     context.home = HomePage(context.browser)
     context.assignleave = LeavePage(context.browser)
+    context.log = logging
     print("Executing before all block")
 
 
@@ -18,12 +23,17 @@ def before_all(context):
 #      print("Before feature\n")
 
 # Scenario level objects are popped off context when scenario exits
-def before_scenario(context, scenario):
-    pass
+# def before_scenario():
+#     pass
 
 
 def after_scenario(context, scenario):
-    pass
+    print("scenario status" + str(scenario.status))
+    if scenario.status == "failed":
+        if not os.path.exists("failed_scenario_screenshots"):
+            os.mkdir("failed_scenario_screenshots")
+        os.chdir('failed_scenario_screenshots')
+        context.browser.save_screenshot(str(scenario.name) + "_failed.png")
 
 
 # def after_feature(context,feature):
